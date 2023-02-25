@@ -1,0 +1,113 @@
+.vite__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    color:whitesmoke;
+background-color: #82AAE3;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.vite__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.vite__navbar-links_logo {
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.vite__navbar-links_container {
+    display: flex;
+}
+
+.vite__navbar-login {
+    display: flex;
+    
+}
+
+.vite__navbar-login button, .vite__navbar-menu_container-login button {
+    padding: 4px 7px;
+    background-color: aquamarine;
+    color: black;
+    border: 1px solid gray;
+    font-size: medium;
+}
+
+
+.vite__navbar-links_container p, .vite__navbar-login p
+ {
+    font-size: large;
+    margin: auto 10px;
+}
+
+.vite__navbar-menu_container {
+    position: absolute;
+    background-color:#91D8E4 ;
+    padding:0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    justify-items: flex-end;
+    text-align: end;
+    min-width: 150px;
+    top: 60px;
+    right: 0;
+    margin: 5px 1rem auto auto;
+    border-radius: 5px;
+    color:black;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.vite__navbar-menu_container-links p, .vite__navbar-menu_container-login button{
+    margin: 7px;
+    
+}
+
+.vite__navbar-menu_container-links p:hover, .vite__navbar-menu_container-login p:hover{
+   background-color: #BFEAF5;
+    
+}
+
+.vite__navbar-menu {
+    display: none;
+    margin-left: 1rem;
+}
+
+/* .vite__navbar-menu_container-login{
+    display: none;
+} */
+
+/* this means from smallest screen to 900px screen (big-tablet) */
+@media screen and (max-width: 900px){
+    .vite__navbar-links_container{
+        display: none;
+    }
+    .vite__navbar-menu{
+        display: flex;
+    }
+}
+
+/* mobile to tablet */
+@media screen and (max-width: 700px){
+    .vite__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+/* low to mobile  */
+@media screen and (max-width: 550px) {
+    .vite__navbar {
+        padding: 2rem;
+    }
+
+    .vite__navbar-login{
+        display: none;
+    }
+    
+}
